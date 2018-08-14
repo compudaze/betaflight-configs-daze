@@ -1,0 +1,82 @@
+
+
+# diff
+# Betaflight / OMNIBUS (OMNI) 3.4.0 Jul  8 2018 / 15:36:57 (d026ce9fc) MSP API: 1.39
+
+name daze7
+
+feature -RX_PPM
+feature RX_SERIAL
+feature AIRMODE
+beacon RX_SET
+map TAER1234
+serial 2 64 115200 57600 0 115200
+aux 0 0 0 1900 2100 0
+aux 1 13 1 1900 2100 0
+aux 2 35 1 1400 1600 0
+rxfail 3 h
+set gyro_lowpass_hz = 120
+set baro_hardware = NONE
+set min_check = 1010
+set max_check = 1990
+set rssi_channel = 8
+set rc_interp = MANUAL
+set rc_interp_ch = RPYT
+set rc_smoothing_type = FILTER
+set rc_smoothing_input_hz = 25
+set rc_smoothing_derivative_hz = 25
+set serialrx_provider = SBUS
+set blackbox_device = NONE
+set dshot_idle_value = 480
+set motor_pwm_protocol = DSHOT600
+set vbat_max_cell_voltage = 44
+set current_meter = NONE
+set beeper_dshot_beacon_tone = 2
+set yaw_motors_reversed = ON
+set small_angle = 180
+set osd_rssi_alarm = 45
+set osd_cap_alarm = 5000
+set osd_vbat_pos = 2401
+set osd_rssi_pos = 2074
+set osd_tim_1_pos = 2455
+set osd_tim_2_pos = 2433
+set osd_craft_name_pos = 2049
+set osd_avg_cell_voltage_pos = 2423
+set osd_disarmed_pos = 2282
+set osd_stat_max_spd = OFF
+set osd_stat_max_curr = OFF
+set osd_stat_used_mah = OFF
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set vcd_video_system = NTSC
+profile 0
+
+set dterm_lowpass_hz = 80
+set dterm_lowpass2_hz = 160
+set dterm_notch_cutoff = 0
+set anti_gravity_gain = 2000
+set setpoint_relax_ratio = 50
+set dterm_setpoint_weight = 80
+set iterm_relax = RP
+set throttle_boost = 4
+set p_pitch = 44
+set i_pitch = 75
+set d_pitch = 33
+set p_roll = 40
+set i_roll = 70
+set d_roll = 30
+set i_yaw = 70
+rateprofile 0
+
+set roll_expo = 20
+set pitch_expo = 20
+set yaw_expo = 20
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 75
+set tpa_rate = 15
+set tpa_breakpoint = 1150
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 70
+
+# 

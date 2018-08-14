@@ -1,0 +1,134 @@
+diff
+
+# version
+# Betaflight / OMNIBUSF4 (OBF4) 3.4.1 Aug  2 2018 / 08:18:29 (1d99444d9) MSP API: 1.39
+
+board_name OMNIBUSF4
+manufacturer_id AIRB
+
+# name
+name daze4
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature -RX_PARALLEL_PWM
+feature RX_SERIAL
+feature TELEMETRY
+feature AIRMODE
+
+# beeper
+
+# beacon
+beacon RX_SET
+
+# map
+map TAER1234
+
+# serial
+serial 0 64 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1900 2100 0
+aux 1 13 1 1900 2100 0
+aux 2 35 1 1400 1600 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+rxfail 3 h
+
+# master
+set gyro_lowpass_hz = 120
+set mag_hardware = NONE
+set baro_hardware = NONE
+set min_check = 1010
+set max_check = 1990
+set rssi_channel = 8
+set rc_interp_ch = RPYT
+set rc_smoothing_type = FILTER
+set serialrx_provider = SBUS
+set blackbox_device = NONE
+set dshot_idle_value = 480
+set motor_pwm_protocol = DSHOT600
+set vbat_max_cell_voltage = 44
+set vbat_scale = 108
+set ibata_scale = 240
+set beeper_dshot_beacon_tone = 2
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_rescue_sanity_checks = RESCUE_SANITY_OFF
+set pid_process_denom = 1
+set osd_warn_core_temp = OFF
+set osd_rssi_alarm = 45
+set osd_cap_alarm = 5000
+set osd_vbat_pos = 2401
+set osd_rssi_pos = 2074
+set osd_tim_2_pos = 2433
+set osd_vtx_channel_pos = 353
+set osd_current_pos = 2454
+set osd_mah_drawn_pos = 2424
+set osd_craft_name_pos = 2049
+set osd_warnings_pos = 2378
+set osd_disarmed_pos = 2283
+set osd_stat_max_spd = OFF
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set vtx_band = 5
+set vtx_channel = 2
+set vtx_freq = 5695
+set vcd_video_system = NTSC
+
+# profile
+profile 0
+
+set dterm_lowpass2_hz = 250
+set dterm_notch_cutoff = 0
+set anti_gravity_gain = 4000
+set setpoint_relax_ratio = 10
+set dterm_setpoint_weight = 120
+set iterm_rotation = OFF
+set iterm_relax = RP
+set iterm_relax_type = SETPOINT
+set iterm_relax_cutoff = 12
+set p_pitch = 37
+set i_pitch = 70
+set d_pitch = 25
+set p_roll = 34
+set i_roll = 65
+set d_roll = 23
+set i_yaw = 65
+set abs_control_gain = 10
+
+# rateprofile
+rateprofile 0
+
+set roll_expo = 10
+set pitch_expo = 10
+set yaw_expo = 10
+set roll_srate = 60
+set pitch_srate = 60
+set yaw_srate = 60
+set tpa_rate = 15
+set tpa_breakpoint = 1150
+set throttle_limit_type = CLIP
+set throttle_limit_percent = 95
+
+# 
