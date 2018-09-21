@@ -1,7 +1,7 @@
 diff
 
 # version
-# Betaflight / PYRODRONEF4 (PYRO) 3.4.1 Aug  2 2018 / 08:22:30 (1d99444d9) MSP API: 1.39
+# Betaflight / PYRODRONEF4 (PYRO) 3.5.1 Sep  8 2018 / 05:44:50 (d9fb5ca13) MSP API: 1.40
 
 board_name PYRODRONEF4
 manufacturer_id 
@@ -47,9 +47,9 @@ serial 4 2048 115200 57600 0 115200
 # mode_color
 
 # aux
-aux 0 0 0 1900 2100 0
-aux 1 13 1 1900 2100 0
-aux 2 35 1 1400 1600 0
+aux 0 0 0 1900 2100 0 0
+aux 1 13 1 1900 2100 0 0
+aux 2 35 1 1400 1600 0 0
 
 # adjrange
 
@@ -62,14 +62,15 @@ rxfail 3 h
 
 # master
 set gyro_lowpass_hz = 120
+set dyn_notch_quality = 15
+set dyn_notch_width_percent = 30
 set min_check = 1010
 set max_check = 1990
 set rssi_channel = 8
-set rc_interp_ch = RPYT
 set rc_smoothing_type = FILTER
 set serialrx_provider = SBUS
+set airmode_start_throttle_percent = 20
 set blackbox_device = NONE
-set dshot_idle_value = 480
 set motor_pwm_protocol = DSHOT600
 set align_board_roll = 180
 set vbat_max_cell_voltage = 44
@@ -79,7 +80,6 @@ set ibata_scale = 250
 set beeper_dshot_beacon_tone = 2
 set yaw_motors_reversed = ON
 set small_angle = 180
-set gps_rescue_sanity_checks = RESCUE_SANITY_OFF
 set pid_process_denom = 1
 set tlm_halfduplex = OFF
 set osd_warn_core_temp = OFF
@@ -97,6 +97,7 @@ set osd_stat_max_spd = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
 set vtx_band = 5
+set vtx_power = 2
 set vtx_freq = 5658
 set vcd_video_system = NTSC
 
@@ -105,34 +106,28 @@ profile 0
 
 set dterm_lowpass2_hz = 250
 set dterm_notch_cutoff = 0
-set anti_gravity_gain = 4000
-set setpoint_relax_ratio = 10
-set dterm_setpoint_weight = 120
-set iterm_rotation = OFF
+set feedforward_transition = 10
 set iterm_relax = RP
 set iterm_relax_type = SETPOINT
-set iterm_relax_cutoff = 12
-set throttle_boost = 8
 set p_pitch = 48
 set i_pitch = 80
-set d_pitch = 30
+set d_pitch = 28
+set f_pitch = 80
 set p_roll = 44
 set i_roll = 75
-set d_roll = 27
+set d_roll = 26
+set f_roll = 80
+set p_yaw = 60
 set i_yaw = 75
-set abs_control_gain = 10
+set f_yaw = 80
 
 # rateprofile
 rateprofile 0
 
-set roll_expo = 10
-set pitch_expo = 10
-set yaw_expo = 10
 set roll_srate = 60
 set pitch_srate = 60
 set yaw_srate = 60
-set tpa_rate = 15
-set tpa_breakpoint = 1150
+set tpa_breakpoint = 1050
 set throttle_limit_type = CLIP
 set throttle_limit_percent = 95
 
