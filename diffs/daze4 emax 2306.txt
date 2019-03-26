@@ -1,7 +1,7 @@
 diff
 
 # version
-# Betaflight / OMNIBUSF4 (OBF4) 3.4.1 Aug  2 2018 / 08:18:29 (1d99444d9) MSP API: 1.39
+# Betaflight / OMNIBUSF4 (OBF4) 3.5.7 Mar 15 2019 / 22:10:50 (e9130527c) MSP API: 1.40
 
 board_name OMNIBUSF4
 manufacturer_id AIRB
@@ -42,9 +42,9 @@ serial 0 64 115200 57600 0 115200
 # mode_color
 
 # aux
-aux 0 0 0 1900 2100 0
-aux 1 13 1 1900 2100 0
-aux 2 35 1 1400 1600 0
+aux 0 0 0 1900 2100 0 0
+aux 1 13 1 1900 2100 0 0
+aux 2 35 1 1400 1600 0 0
 
 # adjrange
 
@@ -57,16 +57,17 @@ rxfail 3 h
 
 # master
 set gyro_lowpass_hz = 120
+set dyn_notch_quality = 15
+set dyn_notch_width_percent = 30
 set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1010
 set max_check = 1990
 set rssi_channel = 8
-set rc_interp_ch = RPYT
 set rc_smoothing_type = FILTER
 set serialrx_provider = SBUS
+set airmode_start_throttle_percent = 20
 set blackbox_device = NONE
-set dshot_idle_value = 480
 set motor_pwm_protocol = DSHOT600
 set vbat_max_cell_voltage = 44
 set vbat_scale = 108
@@ -101,21 +102,20 @@ profile 0
 
 set dterm_lowpass2_hz = 250
 set dterm_notch_cutoff = 0
-set anti_gravity_gain = 4000
-set setpoint_relax_ratio = 15
-set dterm_setpoint_weight = 120
-set iterm_rotation = OFF
+set feedforward_transition = 15
 set iterm_relax = RP
 set iterm_relax_type = SETPOINT
-set iterm_relax_cutoff = 12
 set p_pitch = 37
 set i_pitch = 70
 set d_pitch = 25
+set f_pitch = 90
 set p_roll = 34
 set i_roll = 65
 set d_roll = 23
+set f_roll = 90
+set p_yaw = 60
 set i_yaw = 65
-set abs_control_gain = 10
+set f_yaw = 90
 
 # rateprofile
 rateprofile 0
@@ -127,8 +127,7 @@ set yaw_expo = 10
 set roll_srate = 55
 set pitch_srate = 55
 set yaw_srate = 50
-set tpa_rate = 15
-set tpa_breakpoint = 1150
+set tpa_breakpoint = 1050
 set throttle_limit_type = CLIP
 set throttle_limit_percent = 95
 
