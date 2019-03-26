@@ -1,7 +1,7 @@
 diff
 
 # version
-# Betaflight / OMNIBUSF4 (OBF4) 3.5.1 Sep  8 2018 / 05:39:23 (d9fb5ca13) MSP API: 1.40
+# Betaflight / OMNIBUSF4 (OBF4) 3.5.7 Mar 15 2019 / 22:10:50 (e9130527c) MSP API: 1.40
 
 board_name OMNIBUSF4
 manufacturer_id AIRB
@@ -95,6 +95,7 @@ set vtx_band = 5
 set vtx_channel = 7
 set vtx_freq = 5880
 set vcd_video_system = NTSC
+set rcdevice_init_dev_attempts = 4
 
 # profile
 profile 0
