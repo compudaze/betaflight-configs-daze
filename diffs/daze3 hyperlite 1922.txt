@@ -97,8 +97,8 @@ set osd_stat_max_spd = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
 set vtx_band = 5
-set vtx_power = 2
-set vtx_freq = 5658
+set vtx_channel = 7
+set vtx_freq = 5880
 set vcd_video_system = NTSC
 
 # profile
@@ -106,27 +106,31 @@ profile 0
 
 set dterm_lowpass2_hz = 250
 set dterm_notch_cutoff = 0
-set feedforward_transition = 10
+set feedforward_transition = 15
 set iterm_relax = RP
 set iterm_relax_type = SETPOINT
 set p_pitch = 48
 set i_pitch = 80
-set d_pitch = 28
-set f_pitch = 80
+set d_pitch = 30
+set f_pitch = 90
 set p_roll = 44
 set i_roll = 75
-set d_roll = 26
-set f_roll = 80
+set d_roll = 28
+set f_roll = 90
 set p_yaw = 60
 set i_yaw = 75
-set f_yaw = 80
+set f_yaw = 90
 
 # rateprofile
 rateprofile 0
 
-set roll_srate = 60
-set pitch_srate = 60
-set yaw_srate = 60
+set yaw_rc_rate = 80
+set roll_expo = 10
+set pitch_expo = 10
+set yaw_expo = 10
+set roll_srate = 55
+set pitch_srate = 55
+set yaw_srate = 50
 set tpa_breakpoint = 1050
 set throttle_limit_type = CLIP
 set throttle_limit_percent = 95
