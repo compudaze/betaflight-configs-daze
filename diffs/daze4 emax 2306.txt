@@ -102,7 +102,7 @@ profile 0
 set dterm_lowpass2_hz = 250
 set dterm_notch_cutoff = 0
 set anti_gravity_gain = 4000
-set setpoint_relax_ratio = 10
+set setpoint_relax_ratio = 15
 set dterm_setpoint_weight = 120
 set iterm_rotation = OFF
 set iterm_relax = RP
@@ -120,12 +120,13 @@ set abs_control_gain = 10
 # rateprofile
 rateprofile 0
 
+set yaw_rc_rate = 80
 set roll_expo = 10
 set pitch_expo = 10
 set yaw_expo = 10
-set roll_srate = 60
-set pitch_srate = 60
-set yaw_srate = 60
+set roll_srate = 55
+set pitch_srate = 55
+set yaw_srate = 50
 set tpa_rate = 15
 set tpa_breakpoint = 1150
 set throttle_limit_type = CLIP
