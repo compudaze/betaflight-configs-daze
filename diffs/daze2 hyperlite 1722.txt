@@ -101,16 +101,7 @@ profile 0
 
 set dterm_lowpass2_hz = 250
 set dterm_notch_cutoff = 0
-set feedforward_transition = 10
 set iterm_relax = RP
-set iterm_relax_type = SETPOINT
-set i_pitch = 75
-set f_pitch = 90
-set i_roll = 70
-set f_roll = 90
-set p_yaw = 60
-set i_yaw = 90
-set f_yaw = 90
 
 # rateprofile
 rateprofile 0
@@ -122,7 +113,5 @@ set yaw_expo = 10
 set roll_srate = 55
 set pitch_srate = 55
 set yaw_srate = 50
-set tpa_rate = 15
-set tpa_breakpoint = 1750
 
 # 
