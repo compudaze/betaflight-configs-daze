@@ -25,6 +25,7 @@ feature TELEMETRY
 feature AIRMODE
 
 # beeper
+beeper -ON_USB
 
 # beacon
 beacon RX_SET
@@ -63,7 +64,6 @@ set dyn_notch_width_percent = 30
 set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1010
-set max_check = 1990
 set rssi_channel = 8
 set rc_smoothing_type = FILTER
 set serialrx_provider = SBUS
@@ -85,7 +85,7 @@ set osd_cap_alarm = 5000
 set osd_vbat_pos = 2401
 set osd_rssi_pos = 2074
 set osd_tim_2_pos = 2433
-set osd_vtx_channel_pos = 353
+set osd_vtx_channel_pos = 397
 set osd_current_pos = 2454
 set osd_mah_drawn_pos = 2424
 set osd_craft_name_pos = 2049
@@ -127,7 +127,5 @@ set yaw_rc_rate = 80
 set roll_srate = 60
 set pitch_srate = 60
 set yaw_srate = 50
-set throttle_limit_type = CLIP
-set throttle_limit_percent = 95
 
 # 
