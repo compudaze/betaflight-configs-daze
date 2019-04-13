@@ -1,4 +1,4 @@
-diff
+# diff
 
 # version
 # Betaflight / PYRODRONEF4 (PYRO) 3.4.1 Aug  2 2018 / 08:22:30 (1d99444d9) MSP API: 1.39
@@ -92,7 +92,8 @@ set osd_stat_max_spd = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
 set vtx_band = 5
-set vtx_freq = 5658
+set vtx_channel = 7
+set vtx_freq = 5880
 set vcd_video_system = NTSC
 
 # profile
@@ -107,10 +108,10 @@ set iterm_rotation = OFF
 set iterm_relax = RP
 set iterm_relax_type = SETPOINT
 set iterm_relax_cutoff = 12
-set p_pitch = 44
+set p_pitch = 42
 set i_pitch = 80
 set d_pitch = 31
-set p_roll = 40
+set p_roll = 38
 set i_roll = 75
 set d_roll = 28
 set i_yaw = 75
@@ -125,7 +126,7 @@ set yaw_expo = 10
 set roll_srate = 60
 set pitch_srate = 60
 set yaw_srate = 60
-set tpa_rate = 15
+set tpa_rate = 20
 set tpa_breakpoint = 1150
 set throttle_limit_type = CLIP
 set throttle_limit_percent = 95
