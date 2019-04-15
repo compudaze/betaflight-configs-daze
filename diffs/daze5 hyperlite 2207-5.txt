@@ -46,6 +46,7 @@ serial 5 2048 115200 57600 0 115200
 aux 0 0 0 1900 2100 0 0
 aux 1 13 1 1900 2100 0 0
 aux 2 35 1 1400 1600 0 0
+aux 3 36 2 1900 2100 0 0
 
 # adjrange
 
@@ -68,11 +69,8 @@ set rc_smoothing_type = FILTER
 set serialrx_provider = SBUS
 set airmode_start_throttle_percent = 15
 set blackbox_device = NONE
-set min_throttle = 1070
 set dshot_idle_value = 500
-set use_unsynced_pwm = OFF
 set motor_pwm_protocol = DSHOT1200
-set motor_pwm_rate = 480
 set vbat_max_cell_voltage = 44
 set vbat_scale = 107
 set ibata_scale = 240
