@@ -27,7 +27,6 @@ feature AIRMODE
 beeper -ON_USB
 
 # beacon
-beacon RX_SET
 
 # map
 map TAER1234
