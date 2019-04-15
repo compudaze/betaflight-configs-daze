@@ -1,4 +1,4 @@
-diff
+# diff
 
 # version
 # Betaflight / PYRODRONEF4 (PYRO) 3.5.7 Mar 15 2019 / 22:14:50 (e9130527c) MSP API: 1.40
@@ -97,8 +97,7 @@ set osd_stat_max_spd = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
 set vtx_band = 5
-set vtx_channel = 7
-set vtx_freq = 5880
+set vtx_freq = 5658
 set vcd_video_system = NTSC
 set rcdevice_init_dev_attempts = 4
 
