@@ -105,10 +105,10 @@ set dterm_lowpass2_hz = 250
 set dterm_notch_cutoff = 0
 set iterm_relax = RP
 set i_pitch = 80
-set d_pitch = 28
+set d_pitch = 29
 set f_pitch = 110
 set i_roll = 75
-set d_roll = 26
+set d_roll = 27
 set f_roll = 110
 set p_yaw = 62
 set i_yaw = 120
@@ -123,5 +123,7 @@ set yaw_rc_rate = 80
 set roll_srate = 60
 set pitch_srate = 60
 set yaw_srate = 50
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 90
 
 # 
