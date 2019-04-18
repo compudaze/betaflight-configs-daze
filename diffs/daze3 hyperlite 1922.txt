@@ -104,13 +104,15 @@ profile 0
 set dterm_lowpass2_hz = 250
 set dterm_notch_cutoff = 0
 set iterm_relax = RP
+set p_pitch = 48
 set i_pitch = 80
-set d_pitch = 29
+set d_pitch = 30
 set f_pitch = 110
+set p_roll = 44
 set i_roll = 75
-set d_roll = 27
+set d_roll = 28
 set f_roll = 110
-set p_yaw = 62
+set p_yaw = 60
 set i_yaw = 120
 set f_yaw = 110
 
