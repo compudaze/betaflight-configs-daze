@@ -103,7 +103,6 @@ profile 0
 
 set dterm_lowpass2_hz = 250
 set dterm_notch_cutoff = 0
-set feedforward_transition = 15
 set iterm_relax = RP
 set p_pitch = 48
 set i_pitch = 80

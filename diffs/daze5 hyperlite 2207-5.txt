@@ -68,11 +68,8 @@ set rc_smoothing_type = FILTER
 set serialrx_provider = SBUS
 set airmode_start_throttle_percent = 15
 set blackbox_device = NONE
-set min_throttle = 1070
 set dshot_idle_value = 500
-set use_unsynced_pwm = OFF
-set motor_pwm_protocol = DSHOT1200
-set motor_pwm_rate = 480
+set motor_pwm_protocol = DSHOT600
 set vbat_max_cell_voltage = 44
 set vbat_scale = 107
 set ibata_scale = 240
@@ -94,8 +91,8 @@ set osd_disarmed_pos = 2282
 set osd_stat_max_spd = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
-set vtx_band = 5
-set vtx_freq = 5658
+set vtx_channel = 2
+set vtx_freq = 5760
 set vcd_video_system = NTSC
 set rcdevice_init_dev_attempts = 4
 
@@ -104,7 +101,6 @@ profile 0
 
 set dterm_lowpass2_hz = 250
 set dterm_notch_cutoff = 0
-set feedforward_transition = 15
 set iterm_relax = RP
 set p_pitch = 44
 set i_pitch = 80
