@@ -1,3 +1,5 @@
+Entering CLI Mode, type 'exit' to return, or 'help'
+
 # diff
 
 # version
@@ -36,8 +38,7 @@ beacon RX_SET
 map TAER1234
 
 # serial
-serial 0 64 115200 57600 0 115200
-serial 2 32 115200 57600 0 115200
+serial 2 64 115200 57600 0 115200
 serial 4 2048 115200 57600 0 115200
 
 # led
@@ -68,7 +69,8 @@ set dyn_notch_width_percent = 30
 set min_check = 1010
 set rssi_channel = 8
 set rc_smoothing_type = FILTER
-set serialrx_provider = SBUS
+set serialrx_provider = FPORT
+set serialrx_inverted = ON
 set airmode_start_throttle_percent = 15
 set blackbox_device = NONE
 set dshot_idle_value = 500
@@ -96,8 +98,8 @@ set osd_disarmed_pos = 2282
 set osd_stat_max_spd = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
-set vtx_channel = 2
-set vtx_freq = 5760
+set vtx_band = 5
+set vtx_freq = 5658
 set vcd_video_system = NTSC
 
 # profile
