@@ -10,6 +10,10 @@ manufacturer_id AIRB
 name daze4
 
 # resources
+resource MOTOR 1 B01
+resource MOTOR 2 A02
+resource MOTOR 3 B00
+resource MOTOR 4 A03
 
 # mixer
 
@@ -21,7 +25,6 @@ name daze4
 # feature
 feature -RX_PARALLEL_PWM
 feature RX_SERIAL
-feature TELEMETRY
 feature AIRMODE
 
 # beeper
@@ -34,6 +37,7 @@ map TAER1234
 
 # serial
 serial 0 64 115200 57600 0 115200
+serial 5 2048 115200 57600 0 115200
 
 # led
 
@@ -68,15 +72,17 @@ set rc_smoothing_type = FILTER
 set serialrx_provider = SBUS
 set airmode_start_throttle_percent = 15
 set blackbox_device = NONE
+set min_throttle = 1070
 set dshot_idle_value = 500
+set use_unsynced_pwm = OFF
 set motor_pwm_protocol = DSHOT600
+set motor_pwm_rate = 480
 set vbat_max_cell_voltage = 44
-set vbat_scale = 108
+set vbat_scale = 107
 set ibata_scale = 240
 set beeper_dshot_beacon_tone = 2
 set yaw_motors_reversed = ON
 set small_angle = 180
-set gps_rescue_sanity_checks = RESCUE_SANITY_OFF
 set pid_process_denom = 1
 set osd_warn_core_temp = OFF
 set osd_rssi_alarm = 45
@@ -84,19 +90,19 @@ set osd_cap_alarm = 5000
 set osd_vbat_pos = 2401
 set osd_rssi_pos = 2074
 set osd_tim_2_pos = 2433
-set osd_vtx_channel_pos = 397
+set osd_vtx_channel_pos = 2444
 set osd_current_pos = 2454
 set osd_mah_drawn_pos = 2424
 set osd_craft_name_pos = 2049
-set osd_warnings_pos = 2378
-set osd_disarmed_pos = 2283
+set osd_disarmed_pos = 2282
 set osd_stat_max_spd = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
 set vtx_band = 5
-set vtx_channel = 2
-set vtx_freq = 5695
+set vtx_channel = 7
+set vtx_freq = 5880
 set vcd_video_system = NTSC
+set rcdevice_init_dev_attempts = 4
 
 # profile
 profile 0
@@ -126,6 +132,6 @@ set roll_srate = 65
 set pitch_srate = 65
 set yaw_srate = 65
 set throttle_limit_type = SCALE
-set throttle_limit_percent = 94
+set throttle_limit_percent = 95
 
 # 
